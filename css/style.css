@@ -1,3 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.main {
+  min-height: calc(var(--vh, 1vh) * 100);
+  background-color: black;
+}
+.main .frame {
+  position: fixed;
+  left: max(20px, 4vmin);
+  right: max(20px, 4vmin);
+  top: max(20px, 4vmin);
+  bottom: max(20px, 4vmin);
+  overflow: hidden;
+  border: 5px solid white;
+  border-radius: max(20px, 4vmin);
+}
+.main .frame .header {
+  position: flex;
+}
+.main .frame .header nav {
+  margin: 20px 10px;
+}
+.main .frame .header nav .navbar-toggler {
+  color: transparent !important;
+}
 
 /*# sourceMappingURL=style.css.map */

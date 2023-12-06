@@ -1,0 +1,51 @@
+  $navbar-light-toggler-border-color: none;
+  $--pad: max(20px, 4vmin);
+  $--bg-dark : black;
+  $--bg-light : white;
+ 
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  min-height: calc(var(--vh, 1vh)*100);
+  background-color: $--bg-dark;
+  
+
+  .frame {
+    position: fixed;
+    left: $--pad;
+    right: $--pad;
+    top:  $--pad;
+    bottom: $--pad;
+    overflow: hidden;
+    border: 5px solid  $--bg-light;
+    border-radius: $--pad;
+  
+    .header{
+      position: flex;
+
+      nav{
+        margin: 20px 10px;
+
+        .navbar-toggler{
+          color: transparent !important;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
