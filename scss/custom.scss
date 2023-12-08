@@ -2,6 +2,12 @@
   $--pad: max(20px, 4vmin);
   $--bg-dark : black;
   $--bg-light : white;
+  $--text-dark: black;
+  $--text-light : white;
+  $--text-style: 'Courier Prime', monospace;
+  $--vh-full-fit: 100vh;
+  $--vh : 9.23px;
+
  
 
 
@@ -9,10 +15,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: $--text-style;
 }
 
 .main{
-  min-height: calc(var(--vh, 1vh)*100);
+  min-height: $--vh-full-fit;
   background-color: $--bg-dark;
   
 
@@ -27,7 +34,6 @@
     border-radius: $--pad;
   
     .header{
-      position: flex;
 
       nav{
         margin: 20px 10px;
@@ -40,6 +46,20 @@
     }
   }
 }
+
+.main-page{
+  min-height: 80%;
+
+  #main-page-spacer{
+    height: 30vh;
+  }
+  
+}
+
+
+
+
+
 
 
 
