@@ -14,7 +14,6 @@
   right: max(20px, 4vmin);
   top: max(20px, 4vmin);
   bottom: max(20px, 4vmin);
-  overflow: hidden;
   border: 5px solid white;
   border-radius: max(20px, 4vmin);
 }
@@ -24,12 +23,91 @@
 .main .frame .header nav .navbar-toggler {
   color: transparent !important;
 }
+.main .frame #works-display-row {
+  overflow: hidden;
+  width: 100%;
+  max-height: 260px;
+}
+.main .frame #works-display {
+  width: calc(25% - 16px);
+  min-width: 270px;
+  max-width: 350px;
+  height: 250px;
+  margin-left: 4px;
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+.main .frame #img-works-display {
+  width: 100%;
+  height: 200px;
+  border-radius: 3px;
+}
 
 .main-page {
-  min-height: 80%;
+  height: 80%;
 }
 .main-page #main-page-spacer {
-  height: 30vh;
+  height: 20vh;
+}
+.main-page #aboutme {
+  width: 50vh;
+  justify-content: ends;
+}
+
+.main-page::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-backdrop {
+  z-index: -1 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.modal-content a {
+  color: black !important;
+}
+
+@media only screen and (max-width: 961px) {
+  .main-page {
+    height: 80%;
+  }
+  .main-page #main-page-spacer {
+    height: 10vh;
+  }
+  .main-page #aboutme {
+    width: 100%;
+  }
+  .main-page .main-page-works {
+    padding: 0;
+    height: 80%;
+  }
+  #aboutme::-webkit-scrollbar {
+    display: none;
+  }
+  #works-display {
+    width: calc(50% - 8px);
+    min-width: 200px;
+    max-width: 350px;
+    height: 250px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  #works-display {
+    width: 200px;
+    display: flex;
+    height: 250px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+  }
+  .main-page-works {
+    padding: 2px !important;
+    height: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
