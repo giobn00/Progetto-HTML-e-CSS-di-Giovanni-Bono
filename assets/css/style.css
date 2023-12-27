@@ -50,6 +50,28 @@ body {
   width: 50vh;
   justify-content: ends;
 }
+.main-page .title {
+  padding-left: 6px;
+  padding-top: 20px;
+}
+.main-page .text {
+  padding-left: 6px;
+  padding-top: 3px;
+}
+.main-page .experience {
+  padding-left: 40px;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+.main-page .section {
+  padding-left: 5px;
+  padding-top: 5px;
+  border-top: 2px solid white;
+}
+.main-page .section p {
+  padding-left: 6px;
+  padding-top: 3px;
+}
 
 .main-page::-webkit-scrollbar {
   display: none;

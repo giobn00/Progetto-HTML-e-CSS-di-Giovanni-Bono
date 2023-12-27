@@ -12,23 +12,17 @@
   $--row-element-sm : 2;
   $--row-element-xs : 1;
 
- 
-
 * {
   margin: 0;
   padding: 0;
   font-family: $--text-style;
 }
-
 body{
   overflow: hidden;
 }
-
 .main{
   min-height: $--vh-full-fit;
   background-color: $--bg-dark;
-  
-
   .frame {
     position: fixed;
     left: $--pad;
@@ -37,21 +31,15 @@ body{
     bottom: $--pad;
     border: 5px solid  $--bg-light;
     border-radius: $--pad;
-  
     .header{
-
       nav{
         margin: 20px 10px;
 
         .navbar-toggler{
           color: transparent !important;
         }
-
       }
     }
-
-
-
     #works-display{
       width: calc(100%/$--row-element-xl - 16px);
       min-width: 270px;
@@ -59,7 +47,6 @@ body{
       height: 250px;
       flex-direction: column;
     }
-
     #img-works-display{
       width: 100%;
       height: 150px;
@@ -67,88 +54,85 @@ body{
     }
   }
 }
-
 .main-page{
   height: 80%;
-
   #main-page-spacer{
     height: 20vh;
   }
-
   #aboutme{
     width: 50vh;
     justify-content: ends;
   }
-  
+  .title{
+    padding-left: 6px;
+    padding-top: 20px;
+  }
+  .text{
+    padding-left: 6px;
+    padding-top: 3px;
+  }
+  .experience{
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: 10px;  
+  }
+  .section{
+    padding-left: 5px;
+    padding-top: 5px;
+    border-top: 2px solid white;
+    p{
+      padding-left: 6px;
+      padding-top: 3px;
+    }
+  }
 }
-
 .main-page::-webkit-scrollbar {
   display: none;
 }
-
-
-  .modal-backdrop {
+.modal-backdrop {
       z-index: $--zindex-modal-backdrop !important;
   }
-
-  a{
+a{
     text-decoration: none !important;
   }
-
 .modal-content{
   a{
     color: $--bg-dark !important;
   }
 }
-
-
-
-
 @media only screen and (max-width: 961px){
   .main-page{
     height: 80%;
-  
     #main-page-spacer{
       height: 10vh;
     }
-
     #aboutme {
       width: 100%;      
     }  
-
     .main-page-works{
       padding: 0;
       height: 80%;
     }
-
  }
-
   #aboutme::-webkit-scrollbar {
     display: none;
   }
-
   #works-display{
     width: calc(100%/$--row-element-sm - 8px) ;
     min-width: 200px;
     max-width: 350px;
     height: 250px;     
   }
-
 }
-
-
 @media only screen and (max-width: 430px){
-
   #works-display{
     width: calc(100% - 8px);
     height: 250px;    
   }
-
   .main-page-works{
     padding: 2px !important;
     height: 80%;
   }
-
 }
 
 
